@@ -1,0 +1,8 @@
+/* CSS files add styling rules to your content */
+
+#arjsDebugUIContainer {
+  display:none !important;   
+}
+.a-enter-vr-button{
+  display:none;
+}  
