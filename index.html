@@ -406,19 +406,27 @@
         
         <a-scene embedded artoolkit="sourceType: webcam;">
             <a-assets>
-              <a-asset-item id="piggy-obj" src="https://cdn.glitch.com/8f8e0448-94d2-484d-a6ee-eef14fadd76e%2Fpiggy.obj?1548939223134"></a-asset-item>
-              <a-asset-item id="piggy-mtl1" src="https://cdn.glitch.com/8f8e0448-94d2-484d-a6ee-eef14fadd76e%2Fsolid-gold-background-7.jpg?1548937489438"></a-asset-item>
-              
-              <a-asset-item id="text1-obj" src="https://cdn.glitch.com/8f8e0448-94d2-484d-a6ee-eef14fadd76e%2F0131text1.obj?1548934592192"></a-asset-item>
-              <a-asset-item id="text2-obj" src="https://cdn.glitch.com/8f8e0448-94d2-484d-a6ee-eef14fadd76e%2F0131text2.obj?1548936316406"></a-asset-item>
-              <a-asset-item id="text3-obj" src="https://cdn.glitch.com/8f8e0448-94d2-484d-a6ee-eef14fadd76e%2F0131text4.obj?1548936326005"></a-asset-item>
-              <a-asset-item id="text4-obj" src="https://cdn.glitch.com/8f8e0448-94d2-484d-a6ee-eef14fadd76e%2F0131text5.obj?1548936308452"></a-asset-item>
+              <a-asset-item id="piggy-obj" src="assets/piggy.obj"></a-asset-item>
+              <a-asset-item id="piggy-ring-obj" src="assets/piggy_13_2.obj"></a-asset-item>
+              <a-asset-item id="text1-obj" src="assets/0202text1.obj"></a-asset-item>
+              <a-asset-item id="text2-obj" src="assets/0131text4.obj"></a-asset-item>
+              <a-asset-item id="text3-obj" src="assets/0202text2.obj"></a-asset-item>
+              <a-asset-item id="text4-obj" src="assets/0131text5.obj"></a-asset-item>
             </a-assets>   
 
             <a-entity position="0 0 0">
               <a-camera id="camera" user-height="1.6" compass-rotation></a-camera>
             </a-entity>
             
+            <a-entity position="0 -6 -18" obj-model="obj: #piggy-ring-obj;" material=" color: pink">
+                <a-animation attribute="rotation"
+                       dur="5000"
+                       fill="forwards"
+                       to="0 360 0"
+                       repeat="indefinite"
+                       easing="linear">
+                </a-animation>
+            </a-entity>
             <!--glod y360-->
             <a-entity>
               <a-entity position="0 0 -18" obj-model="obj: #piggy-obj;" material=" color: #D4AF37">
