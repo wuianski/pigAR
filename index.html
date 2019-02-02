@@ -518,11 +518,18 @@
             <a-entity position="-7 -0.4 23" obj-model="obj: #piggy-obj" material=" color: pink" scale="0.1 0.1 0.1" rotation="0 135 0"></a-entity>
             <!--five piggys--> 
             <!--toward piggys-->
-            <a-entity position="20 2 0" obj-model="obj: #piggy-obj" material=" color: pink" scale="0.7 0.7 0.7" rotation="0 -90 0">
+            <a-entity position="20 1 0" obj-model="obj: #piggy-obj" material=" color: pink" scale="0.1 0.1 0.1" rotation="0 -90 0">
                 <a-animation attribute="position"
                        dur="10000"
                        fill="forwards"
-                       to="-20 2 0"
+                       to="-20 1 0"
+                       repeat="indefinite"
+                       easing="linear">
+                </a-animation>
+                <a-animation attribute="scale"
+                       dur="10000"
+                       fill="forwards"
+                       to="1 1 1"
                        repeat="indefinite"
                        easing="linear">
                 </a-animation>
