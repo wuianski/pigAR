@@ -417,8 +417,8 @@
             <a-entity position="0 0 0">
               <a-camera id="camera" user-height="1.6" compass-rotation></a-camera>
             </a-entity>
-            
-            <a-entity position="0 -6 -20" obj-model="obj: #piggy-ring-obj;" material=" color: pink" scale="0.1 0.1 0.1">
+            <!--circle piggy-->
+            <a-entity position="0 -6 -23" obj-model="obj: #piggy-ring-obj;" material=" color: pink" scale="0.08 0.08 0.08">
                 <a-animation attribute="rotation"
                        dur="5000"
                        fill="forwards"
@@ -428,6 +428,7 @@
                        direction="reverse">
                 </a-animation>
             </a-entity>
+            <!--circle piggy-->
             <!--glod y360-->
             <a-entity>
               <a-entity position="0 0 -18" obj-model="obj: #piggy-obj;" material=" color: #D4AF37">
@@ -443,6 +444,13 @@
                        dur="10000"
                        fill="forwards"
                        to="0 360 0"
+                       repeat="indefinite"
+                       easing="linear">
+              </a-animation>
+              <a-animation attribute="scale"
+                       dur="10000"
+                       fill="forwards"
+                       to="0.5 0.5 0.5"
                        repeat="indefinite"
                        easing="linear">
               </a-animation>
@@ -470,7 +478,7 @@
             <!--pink rot_xy360-->
             <!--pink rot_xy360-->
             <a-entity>
-              <a-entity position="0 0 15" obj-model="obj: #piggy-obj;" material=" color: pink">
+              <a-entity position="0 0 15" obj-model="obj: #piggy-obj;" material=" color: pink" scale="0.3 0.3 0.3">
                 <a-animation attribute="rotation"
                        dur="5000"
                        fill="forwards"
@@ -500,7 +508,13 @@
                 <a-animation attribute="material.color" from="#D4AF37" to="pink" dur="3000" direction="alternate" repeat="indefinite"></a-animation>
               </a-entity> 
             <!--pink2gold big y8-->
-              
+            <!--five piggys-->
+            <a-entity position="0 -6 23" obj-model="obj: #piggy-obj" material=" color: pink" scale="1.3 1.3 1.3"></a-entity>
+            <a-entity position="0 -3 23" obj-model="obj: #piggy-obj" material=" color: pink" scale="1.0 1.0 1.0"></a-entity>
+            <a-entity position="0 -1 23" obj-model="obj: #piggy-obj" material=" color: pink" scale="0.7 0.7 0.7"></a-entity>
+            <a-entity position="0 0 23" obj-model="obj: #piggy-obj" material=" color: pink" scale="0.4 0.4 0.4"></a-entity>
+            <a-entity position="0 0.5 23" obj-model="obj: #piggy-obj" material=" color: pink" scale="0.1 0.1 0.1"></a-entity>
+            <!--five piggys-->  
             <a-entity position="-4 4 -20" obj-model="obj: #text1-obj" material=" color: pink" scale="0.005 0.005 0.005" rotation="0 0 0" gps-place="longitude: 25.117327; latitude: 121.53320600000006">
               <a-animation attribute="material.color" from="pink" to="#D4AF37" dur="300" direction="alternate" repeat="indefinite"></a-animation>
               <a-animation attribute="position" to="-4 3 -20" dur="3000" direction="alternate" repeat="indefinite"></a-animation>
