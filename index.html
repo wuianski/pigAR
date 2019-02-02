@@ -406,13 +406,13 @@
         
         <a-scene embedded artoolkit="sourceType: webcam;">
             <a-assets>
-              <a-asset-item id="piggy-obj" src="https://cdn.glitch.com/8f8e0448-94d2-484d-a6ee-eef14fadd76e%2Fpiggy.obj?1548939223134"></a-asset-item>
+              <a-asset-item id="piggy-obj" src="assets/piggy_b.obj"></a-asset-item>
               <!--<a-asset-item id="piggy-ring-obj" src="https://cdn.glitch.com/8f8e0448-94d2-484d-a6ee-eef14fadd76e%2Fpiggy6.obj?1549118710816"></a-asset-item>-->
-              <a-asset-item id="text1-obj" src="assets/0202text1.obj"></a-asset-item>
+              <a-asset-item id="text1-obj" src="assets/0202text1_b.obj"></a-asset-item>
               <a-asset-item id="text2-obj" src="assets/0131text4.obj"></a-asset-item>
               <a-asset-item id="text3-obj" src="https://cdn.glitch.com/8f8e0448-94d2-484d-a6ee-eef14fadd76e%2F0202text2.obj?1549116159062"></a-asset-item>
               <a-asset-item id="text4-obj" src="https://cdn.glitch.com/8f8e0448-94d2-484d-a6ee-eef14fadd76e%2F0131text5.obj?1548936308452"></a-asset-item>
-              <a-asset-item id="text5-obj" src="assets/0131text2.obj"></a-asset-item>
+              <a-asset-item id="text5-obj" src="assets/0131text2_b.obj"></a-asset-item>
               <a-asset-item id="text6-obj" src="assets/0131text3.obj"></a-asset-item>
             </a-assets>   
 
@@ -450,13 +450,6 @@
                        easing="linear"
                        direction="alternateReverse">
               </a-animation>
-              <!--<a-animation attribute="scale"
-                       dur="10000"
-                       fill="forwards"
-                       to="0.3 0.3 0.3"
-                       repeat="indefinite"
-                       easing="linear">
-              </a-animation>-->
             </a-entity>
             <!--glod rot_y360-->
             <!--pink rot_xy360-->
@@ -519,18 +512,11 @@
             <a-entity position="-7 -0.4 23" obj-model="obj: #piggy-obj" material=" color: pink" scale="0.1 0.1 0.1" rotation="0 135 0"></a-entity>
             <!--five piggys--> 
             <!--toward piggys-->
-            <a-entity position="40 1 0" obj-model="obj: #piggy-obj" material=" color: pink" scale="0.1 0.1 0.1" rotation="0 -90 0">
+            <a-entity position="40 1 0" obj-model="obj: #piggy-obj" material=" color: pink" rotation="0 -90 0">
                 <a-animation attribute="position"
                        dur="10000"
                        fill="forwards"
                        to="-40 1 0"
-                       repeat="indefinite"
-                       easing="linear">
-                </a-animation>
-                <a-animation attribute="scale"
-                       dur="10000"
-                       fill="forwards"
-                       to="1.2 0.6 0.6"
                        repeat="indefinite"
                        easing="linear">
                 </a-animation>
@@ -545,29 +531,29 @@
             </a-entity>
             <!--toward piggys-->
 
-            <a-entity position="-4 4 -15" obj-model="obj: #text1-obj" material=" color: pink" scale="0.005 0.005 0.005" rotation="0 0 0" gps-place="longitude: 25.117327; latitude: 121.53320600000006">
+            <a-entity position="-4 4 -15" obj-model="obj: #text1-obj" material=" color: pink" scale="0.005 0.005 0.005" rotation="0 0 0">
               <a-animation attribute="material.color" from="pink" to="#D4AF37" dur="300" direction="alternate" repeat="indefinite"></a-animation>
               <a-animation attribute="position" to="-4 3 -15" dur="3000" direction="alternate" repeat="indefinite"></a-animation>
             </a-entity> 
             
             <!--three texts-->
-            <a-entity position="-20 4 6" obj-model="obj: #text2-obj" material=" color: pink" scale="0.008 0.008 0.008" rotation="0 110 0" gps-place="longitude: 25.117327; latitude: 121.53320600000006">
+            <a-entity position="-20 4 6" obj-model="obj: #text2-obj" material=" color: pink" scale="0.008 0.008 0.008" rotation="0 110 0">
                 <a-animation attribute="material.color" from="red" to="#D4AF37" dur="300" direction="alternate" repeat="indefinite"></a-animation>
             </a-entity>
-            <a-entity position="-20 0 3" obj-model="obj: #text5-obj" material=" color: pink" scale="0.008 0.008 0.008" rotation="0 110 0" gps-place="longitude: 25.117327; latitude: 121.53320600000006">
+            <a-entity position="-20 0 3" obj-model="obj: #text5-obj" material=" color: pink" scale="0.008 0.008 0.008" rotation="0 110 0">
                 <a-animation attribute="material.color" from="#D4AF37" to="red" dur="300" direction="alternate" repeat="indefinite"></a-animation>
             </a-entity>
-            <a-entity position="-20 -4 0" obj-model="obj: #text6-obj" material=" color: pink" scale="0.008 0.008 0.008" rotation="0 110 0" gps-place="longitude: 25.117327; latitude: 121.53320600000006">
+            <a-entity position="-20 -4 0" obj-model="obj: #text6-obj" material=" color: pink" scale="0.008 0.008 0.008" rotation="0 110 0">
                 <a-animation attribute="material.color" from="red" to="#D4AF37" dur="300" direction="alternate" repeat="indefinite"></a-animation>
             </a-entity>
             <!--three texts-->
               
-            <a-entity position="7 4 30" obj-model="obj: #text3-obj" material=" color: pink" scale="0.008 0.008 0.008" rotation="0 180 0" gps-place="longitude: 25.117327; latitude: 121.53320600000006">
+            <a-entity position="7 4 30" obj-model="obj: #text3-obj" material=" color: pink" scale="0.008 0.008 0.008" rotation="0 180 0">
               <a-animation attribute="material.color" from="pink" to="#D4AF37" dur="300" direction="alternate" repeat="indefinite"></a-animation>
               <a-animation attribute="rotation" to="0 180 360" dur="3000" direction="alternate" repeat="indefinite"></a-animation>
             </a-entity>  
             
-            <a-entity position="20 4 -6" obj-model="obj: #text4-obj" material=" color: #D4AF37" scale="0.008 0.008 0.008" rotation="0 270 0" gps-place="longitude: 25.117327; latitude: 121.53320600000006">
+            <a-entity position="20 4 -6" obj-model="obj: #text4-obj" material=" color: #D4AF37" scale="0.008 0.008 0.008" rotation="0 270 0">
               <a-animation attribute="scale" to="0.001 0.001 0.001" direction="alternate" dur="3000" repeat="indefinite"></a-animation>
               <a-animation attribute="rotation" to="0 630 0" direction="alternate" dur="3000" repeat="indefinite"></a-animation> 
               <a-animation attribute="material.color" from="red" to="#D4AF37" dur="300" direction="alternate" repeat="indefinite"></a-animation>
