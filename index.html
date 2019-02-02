@@ -433,7 +433,7 @@
             <!--circle piggy-->
             <!--glod y360-->
             <a-entity>
-              <a-entity position="0 0 -18" obj-model="obj: #piggy-obj;" material=" color: #D4AF37">
+              <a-entity position="0 0 -18" obj-model="obj: #piggy-obj;" material=" color: #D4AF37" scale="1 1 1">
                 <a-animation attribute="rotation"
                        dur="5000"
                        fill="forwards"
@@ -445,14 +445,14 @@
               <a-animation attribute="rotation"
                        dur="10000"
                        fill="forwards"
-                       to="0 360 0"
+                       to="0 360 360"
                        repeat="indefinite"
                        easing="linear">
               </a-animation>
               <a-animation attribute="scale"
                        dur="10000"
                        fill="forwards"
-                       to="0.5 0.5 0.5"
+                       to="0.3 0.3 0.3"
                        repeat="indefinite"
                        easing="linear">
               </a-animation>
@@ -534,7 +534,7 @@
                        easing="linear">
                 </a-animation>
                 <a-animation attribute="rotation"
-                       dur="10000"
+                       dur="1000"
                        fill="forwards"
                        to="0 0 360"
                        repeat="indefinite"
@@ -545,7 +545,7 @@
 
             <a-entity position="-4 4 -15" obj-model="obj: #text1-obj" material=" color: pink" scale="0.005 0.005 0.005" rotation="0 0 0" gps-place="longitude: 25.117327; latitude: 121.53320600000006">
               <a-animation attribute="material.color" from="pink" to="#D4AF37" dur="300" direction="alternate" repeat="indefinite"></a-animation>
-              <a-animation attribute="position" to="-4 3 -20" dur="3000" direction="alternate" repeat="indefinite"></a-animation>
+              <a-animation attribute="position" to="-4 3 -15" dur="3000" direction="alternate" repeat="indefinite"></a-animation>
             </a-entity> 
             
             <!--three texts-->
